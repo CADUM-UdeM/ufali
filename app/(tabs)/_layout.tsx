@@ -3,7 +3,9 @@ import {Tabs} from "expo-router";
 
 const _Layout = () => {
   return (
-    <Tabs>
+    <Tabs
+        initialRouteName="index"
+    >
         <Tabs.Screen
             name= "parametres"
             options= {{
