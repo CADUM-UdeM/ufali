@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="26.483" height="25.027"/>
+  </defs>
+  <ellipse style="fill: rgba(216, 216, 216, 0.537);" cx="249.206" cy="362.214" rx="109.889" ry="13.191">
+    <title>Ombre_dessous</title>
+  </ellipse>
+  <path style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke: rgb(67, 59, 56); stroke-width: 6px; transform-origin: 300.9px 329.474px;" d="M 291.313 300.324 C 308.47 312.911 296.205 351.978 291.49 358.622">
+    <title>jambe_droite</title>
+    <animateTransform type="translate" additive="sum" attributeName="transform" values="0 0;0 0;0 0;0 3;0 0" begin="-0.03s" dur="4.05s" fill="freeze" keyTimes="0; 0.250411; 0.49732; 0.744238; 1" repeatCount="indefinite"/>
+  </path>
+  <path style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 6; stroke: rgb(67, 59, 56); transform-origin: 202.277px 329.474px;" d="M 192.69 358.624 C 209.847 346.037 197.582 306.97 192.867 300.326" transform="matrix(-1, 0, 0, -1, -0.000019, 0.000033)">
+    <title>jambe_gauche</title>
+    <animateTransform type="translate" additive="sum" attributeName="transform" values="0 0;0 3;0 0;0 3;0 0" begin="0s" dur="4s" fill="freeze" keyTimes="0; 0.246054; 0.500442; 0.75878; 1" repeatCount="indefinite"/>
+  </path>
+  <g>
+    <g style="transform-origin: 371.854px 271.51px;" transform="matrix(0.89781, 0.047053, -0.044255, 0.844434, -10.354703, -6.187856)">
+      <title>membre_sup_droit</title>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 6; stroke: rgb(67, 59, 56);" d="M 387.793 300.324 C 377.057 300.324 348.329 242.289 350.511 225.243" transform="matrix(-1, 0, 0, -1, 738.18574524, 525.56677246)">
+        <title>bras_droit</title>
+        <animate attributeName="d" values="M 387.793 300.324 C 377.057 300.324 348.329 242.289 350.511 225.243;M 385.427 280.517 C 364.631 270.172 347.392 257.747 333.48 246.13;M 386.486 273.812 C 355.224 276.604 339.951 275.885 319.073 277.949;M 391.338 259.51 C 360.076 262.302 313.153 295.84 322.668 350.859" dur="1.95s" fill="freeze" keyTimes="0; 0.212073; 0.485577; 1" begin="0.02s" end="1.47s"/>
+      </path>
+      <g style="transform-origin: 118.411px 306.63px;" transform="matrix(-0.755781, -0.039609, -0.052336, 0.99863, 267.225739, -0.447173)">
+        <title>main_droite</title>
+        <ellipse style="fill: rgb(67, 59, 56); stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%;" cx="114.836" cy="307.193" rx="5.806" ry="10.676">
+          <animateMotion path="M 2.734 0.225 C 4.285 4.927 -57.58 -61.025 -32.052 -107.254" calcMode="linear" begin="-0.07s" dur="2.01s" fill="freeze" keyTimes="0; 0.14574; 0.41818; 0.626518; 0.802805; 1" keyPoints="0; 0.17; 0.49; 0.79; 1; 1"/>
+          <animateTransform type="rotate" additive="sum" attributeName="transform" values="-180;-93;0;0" begin="0s" dur="1.93s" fill="freeze" keyTimes="0; 0.383333; 0.794495; 1"/>
+        </ellipse>
+        <ellipse style="fill: rgb(67, 59, 56); transform-box: fill-box; transform-origin: 50% 50%;" cx="122.627" cy="296.906" rx="7.55" ry="3.418" transform="matrix(0.642788, 0.766044, -0.766044, 0.642788, -2.307133, 6.464987)">
+          <animateTransform type="rotate" additive="sum" attributeName="transform" values="-34;38;110;79;103" begin="0s" dur="2s" fill="freeze" keyTimes="0; 0.125; 0.25; 0.441667; 1"/>
+          <animateMotion path="M 0 0 C -6.356 3.469 -50.323 -80.013 -28.485 -99.545" calcMode="linear" begin="0s" dur="2s" fill="freeze" keyTimes="0; 0.11667; 0.45; 0.691667; 0.775; 1" keyPoints="0; 0.13; 0.61; 0.93; 0.99; 1"/>
+        </ellipse>
+      </g>
+      <animateTransform type="translate" additive="sum" attributeName="transform" values="0 0;0 2;0 0" dur="1.98s" fill="freeze" keyTimes="0; 0.48823; 1" repeatCount="5" begin="2.04s"/>
+    </g>
+    <g transform="matrix(-0.994522, 0.104529, 0.084812, 0.806935, -230.219498, -6.689449)" style="transform-origin: 371.854px 271.51px;">
+      <title>membre_sup_gauche</title>
+      <path style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 6; stroke: rgb(67, 59, 56); transform-box: fill-box; transform-origin: 50% 50%;" d="M 387.793 300.324 C 377.057 300.324 348.329 242.289 350.511 225.243" transform="matrix(-1, 0, 0, -1, -0.000021, -0.000017)">
+        <title>bras_gauche</title>
+      </path>
+      <g style="transform-origin: 118.411px 306.63px;" transform="matrix(-0.755781, -0.039609, -0.052336, 0.99863, 267.225739, -0.447173)">
+        <title>main_gauche</title>
+        <ellipse style="fill: rgb(67, 59, 56); stroke-linecap: round; stroke-linejoin: round;" cx="114.836" cy="307.193" rx="5.806" ry="10.676"/>
+        <ellipse style="fill: rgb(67, 59, 56); transform-box: fill-box; transform-origin: 50% 50%;" cx="122.627" cy="296.906" rx="7.55" ry="3.418" transform="matrix(0.642788, 0.766044, -0.766044, 0.642788, -2.307133, 6.464987)"/>
+      </g>
+    </g>
+    <ellipse style="stroke: rgb(67, 59, 56); stroke-width: 6px; fill: rgb(247, 114, 82);" cx="251.438" cy="213.944" rx="105.7" ry="101.248">
+      <title>frame</title>
+    </ellipse>
+    <ellipse style="fill: rgb(254, 233, 204); stroke: rgb(67, 59, 56); stroke-width: 6px;" cx="252.196" cy="213.29" rx="78.257" ry="74.099">
+      <title>cadrant</title>
+    </ellipse>
+    <path style="fill: rgb(252, 212, 167);" d="M 193.314 257.422 C 190.995 255.314 192.858 258.168 187.027 244.459 C 184.803 239.23 182.836 231.626 182.448 222.747 C 182.099 214.77 181.858 205.934 184.101 197.236 C 185.666 191.167 189.485 183.496 192.61 178.259 C 194.169 175.646 203.297 164.19 215.757 156.321 C 226.531 149.517 239.538 145.971 252.381 144.603 C 262.91 143.482 274.052 144.899 282.412 148.572 C 293.391 153.396 300.99 160.265 301.065 159.593 C 301.092 159.352 291.313 150.162 276.654 145.538 C 270.108 143.473 262.126 142.911 254.236 142.433 C 247.736 142.039 240.506 142.045 233.811 144.248 C 229.363 145.712 220.834 148.188 216.836 150.162 C 204.36 156.323 199.077 163.183 197.382 164.848 C 193.058 169.097 188.885 174.345 186.656 178.06 C 182.799 184.49 179.792 191.285 178.84 196.496 C 171.146 221.98 184.134 248.665 193.314 257.422 Z">
+      <title>ombre_cadrant</title>
+    </path>
+    <path style="fill: none; stroke-linecap: round; stroke-width: 5px; stroke: rgb(67, 59, 56);" d="M 232.952 225.243 C 244.437 233.629 259.072 234.219 271.787 225.243">
+      <title>bouche</title>
+    </path>
+    <ellipse style="stroke-width: 1; fill: rgb(67, 59, 56);" cx="279.753" cy="199.432" rx="11.56" ry="12.881">
+      <title>oeil_gauche</title>
+    </ellipse>
+    <ellipse style="stroke-width: 1; fill: rgb(67, 59, 56);" cx="223.298" cy="199.632" rx="11.434" ry="12.514">
+      <title>oeil_droit</title>
+    </ellipse>
+    <g>
+      <title>Ring_droit+ombrage</title>
+      <g style="" id="">
+        <title>ring_droit</title>
+        <rect x="137.747" y="85.966" width="16.154" height="22.521" style="stroke-linejoin: round; stroke-linecap: round; fill: rgb(67, 59, 56); stroke-width: 1; transform-origin: 145.824px 97.227px;" transform="matrix(0.743145, -0.66913, 0.66913, 0.743145, 185.509461, 41.681069)"/>
+        <path style="fill: rgb(255, 218, 84); stroke: rgb(67, 59, 56); stroke-width: 6; stroke-linejoin: round; stroke-linecap: round; transform-origin: 345.807px 122.555px;" d="M 302.258 99.306 C 302.258 109.248 311.741 143.334 343.488 145.696 C 376.629 147.964 389.354 113.295 389.354 103.224 C 389.36 104.795 368.154 110.948 344.457 109.912 C 322.917 108.971 302.263 100.966 302.258 99.306 Z" transform="matrix(-0.766043, -0.642789, 0.642789, -0.766043, -0.000009, -0.000004)"/>
+      </g>
+      <path style="fill: rgb(252, 159, 46);" d="M 362.646 110.567 C 378.833 126.733 368.995 156.707 365.043 161.776 C 359.773 152.173 355.13 146.532 351.039 141.753 C 352.033 142.577 357.949 145.314 359.774 143.259 C 359.645 142.892 364.363 143.021 362.646 110.567 Z"/>
+      <path stroke-width="0" d="M 330.695 101.058 C 333.107 100.741 336.808 100.528 339.414 101.058 C 341.899 101.564 344.857 102.715 346.047 104.023 C 347.104 105.183 347.226 107.073 346.806 108.258 C 346.421 109.341 345.389 110.381 343.963 110.94 C 342.251 111.611 338.586 111.58 336.76 111.505 C 335.456 111.451 334.992 110.988 333.728 110.94 C 332.035 110.876 329.02 111.85 327.283 111.505 C 325.771 111.204 324.419 110.372 323.682 109.387 C 322.875 108.31 322.503 106.337 322.924 105.152 C 323.308 104.068 324.525 103.145 325.767 102.47 C 327.08 101.755 328.722 101.317 330.695 101.058 Z" style="stroke-width: 2px; fill: rgb(254, 235, 194); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.99863, 0.052336, -0.052336, 0.99863, 0, -0.000001)"/>
+    </g>
+    <g>
+      <title>Ring_gauche+ombrage</title>
+      <g style="" transform="matrix(-1, 0, 0, 1, 500.04248, 2.060078)">
+        <title>ring_gauche</title>
+        <rect x="137.747" y="85.966" width="16.154" height="22.521" style="stroke-linejoin: round; stroke-linecap: round; fill: rgb(67, 59, 56); stroke-width: 1; transform-origin: 145.824px 97.227px;" transform="matrix(0.743145, -0.66913, 0.66913, 0.743145, 185.509461, 41.681069)"/>
+        <path style="fill: rgb(255, 218, 84); stroke: rgb(67, 59, 56); stroke-width: 6; stroke-linejoin: round; stroke-linecap: round; transform-origin: 345.807px 122.555px;" d="M 302.258 99.306 C 302.258 109.248 311.741 143.334 343.488 145.696 C 376.629 147.964 389.354 113.295 389.354 103.224 C 389.36 104.795 368.154 110.948 344.457 109.912 C 322.917 108.971 302.263 100.966 302.258 99.306 Z" transform="matrix(-0.766043, -0.642789, 0.642789, -0.766043, -0.000009, -0.000004)"/>
+      </g>
+      <path style="fill: rgb(252, 159, 46);" d="M 165.776 100.108 C 176.26 100.249 190.959 110.448 179.769 117.665 L 194.753 109.869 C 194.241 108.381 187.647 104.671 180.251 102.418 C 175.253 100.896 168.898 100.284 165.776 100.108 Z"/>
+      <path style="fill: rgb(252, 159, 46);" d="M 128.898 144.175 C 128.903 147.772 141.205 155.479 141.479 153.562 L 135.241 163.805 C 134.273 165.536 127.554 145.596 128.898 144.175 Z"/>
+      <path stroke-width="0" d="M 134.743 117.537 C 135.238 117.186 137.276 115.996 140.08 115.306 C 144.05 114.326 149.399 113.857 152.688 113.96 C 156.077 114.066 157.223 114.824 158.463 115.165 C 161.734 116.064 162.709 120.512 162.382 120.955 C 162.233 121.161 161.975 121.995 160.668 122.076 C 155.916 122.367 145.299 122.995 144.57 122.918 C 143.574 122.813 135.142 125.134 132.769 124.934 C 129.424 124.652 131.668 119.716 134.743 117.537 Z" style="stroke-width: 2; fill: rgb(254, 235, 194); transform-origin: 142.181px 119.895px;" transform="matrix(0.78801, -0.615662, 0.615662, 0.78801, 0, 0.000001)"/>
+    </g>
+    <path d="M 342.025 261.168 C 340.115 265.079 336.419 270.328 332.061 275.297 C 327.414 280.594 321.822 285.483 317.796 288.925 C 313.396 292.686 297.118 303.956 280.742 308.299 C 268.896 311.44 255.882 312.112 243.981 311.739 C 228.597 311.257 211.823 305.091 211.864 304.616 C 211.88 304.429 216.985 307.814 242.204 308.941 C 256.159 309.565 274.64 305.092 287.434 300.324 C 299.303 295.901 317.401 285.764 330.072 270.125 C 342.726 254.507 347.339 230.052 347.461 225.243 C 347.967 205.268 347.369 197.776 342.763 181.85 C 339.811 171.645 340.879 175.21 334.137 158.7 C 333.057 156.055 329.648 150.32 329.742 150.162 C 329.989 149.749 337.538 158.156 345.421 173.827 C 347.278 177.518 350.613 185.718 351.599 190.987 C 352.04 193.345 352.415 195.256 352.789 197.24 C 353.887 203.051 354.167 208.903 354.414 214.316 C 354.692 220.418 352.562 231.882 350.748 238.761 C 350.298 240.468 349.683 242.009 349.393 243.261 C 347.77 250.27 343.889 257.351 342.025 261.168 Z" style="fill: rgb(230, 91, 62);">
+      <title>ombre_frame</title>
+    </path>
+    <ellipse style="stroke-width: 1; fill: rgb(228, 227, 226); transform-box: fill-box; transform-origin: 50% 50%;" cx="228.051" cy="196.346" rx="3.747" ry="5.049" transform="matrix(0.891006, 0.453991, -0.453991, 0.891006, 47.672355, -0.482217)"/>
+    <ellipse style="stroke-width: 1; fill: rgb(228, 227, 226); transform-origin: 228.051px 196.346px;" cx="228.051" cy="196.346" rx="3.747" ry="5.049" transform="matrix(0.891006, 0.453991, -0.453991, 0.891006, -8.980383, -0.202731)"/>
+    <ellipse style="fill: rgba(239, 200, 200, 0.91);" cx="209.208" cy="215.027" rx="9.873" ry="4.459"/>
+    <ellipse style="fill: rgba(239, 200, 200, 0.91); stroke-width: 1;" cx="295.309" cy="214.339" rx="9.873" ry="4.789"/>
+    <animateTransform type="translate" additive="sum" attributeName="transform" values="0 0;0 3;0 0;0 3;0 0" dur="4.02s" fill="freeze" keyTimes="0; 0.2521; 0.49525; 0.75926; 1" begin="-0.02s" repeatCount="indefinite"/>
+  </g>
+  <path d="M 207.23 364.127 C 205.743 369.974 204.016 370.806 200.429 371.132 C 196.842 371.458 197.569 347.399 200.549 345.607 C 203.529 343.815 208.717 358.28 207.23 364.127 Z" style="fill: rgb(67, 59, 56); stroke-linecap: round; stroke-linejoin: round; stroke-width: 0.878; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-0.017452, -0.999848, 0.999848, -0.017452, 0.000001, -0.000036)">
+    <title>pied_gauche</title>
+  </path>
+  <path d="M 304.034 354.489 C 302.547 348.642 300.82 347.81 297.233 347.484 C 293.646 347.158 294.373 371.217 297.353 373.009 C 300.333 374.801 305.521 360.336 304.034 354.489 Z" style="fill: rgb(67, 59, 56); stroke-linecap: round; stroke-linejoin: round; stroke-width: 0.878; transform-origin: 299.558px 360.321px;" transform="matrix(0.017452, -0.999848, 0.999848, 0.017452, -0.000025, -0.000025)">
+    <title>pied_droit</title>
+  </path>
+</svg>

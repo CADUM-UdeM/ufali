@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const Parametres = () => {
+const DonneesEtudes = () => {
   return (
     <View>
-      <Text>Parametres</Text>
+      <Text>DonneesEtudes</Text>
     </View>
   );
 };
 
-export default Parametres;
+export default DonneesEtudes;

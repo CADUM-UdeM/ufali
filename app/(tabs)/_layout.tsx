@@ -104,4 +104,6 @@ export default function TabLayout() {
       />
     </Tabs>
   );
-}
+};
+
+export default _Layout;
