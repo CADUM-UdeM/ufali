@@ -1,6 +1,19 @@
-import { StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Text } from "react-native";
 
-export default function HomeScreen() {}
+export default function HomeScreen() {
+  return (
+    <ScrollView
+      contentContainerStyle={{
+        flexGrow: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "white",
+      }}
+    >
+      <Text>Donnees Screen</Text>
+    </ScrollView>
+  );
+}
 
 const styles = StyleSheet.create({
   titleContainer: {
