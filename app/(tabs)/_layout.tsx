@@ -1,9 +1,7 @@
 import { Tabs } from "expo-router";
 import React from "react";
 
-import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
-import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import IonIcons from "@expo/vector-icons/Ionicons";
 
@@ -13,55 +11,96 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        tabBarActiveTintColor: "#000000ff",
+        tabBarInactiveTintColor: "#000000",
         headerShown: false,
-        tabBarButton: HapticTab,
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          backgroundColor: "#67348B",
+          position: "absolute",
+          bottom: 35,
+          borderRadius: 25,
+          height: 70,
+          marginHorizontal: "5%",
+          shadowColor: "#000",
+        },
+        tabBarInactiveBackgroundColor: "#67348B",
       }}
     >
       <Tabs.Screen
         name="parametres"
-        options={{
-          title: "Paramètres",
-          tabBarIcon: ({ color }) => (
+        options={({ route }) => ({
+          tabBarIcon: ({ color, focused }) => (
             <IonIcons name="settings" size={28} color={color} />
           ),
-        }}
+          tabBarItemStyle: {
+            backgroundColor: route.name === "parametres" ? "white" : "#67348B",
+            borderRadius: 20,
+            marginTop: 15,
+            marginLeft: 20,
+            maxWidth: 40,
+          },
+        })}
       />
       <Tabs.Screen
         name="donnees"
-        options={{
-          title: "Données d'etudes",
-          tabBarIcon: ({ color }) => (
-            <IonIcons name="stats-chart" size={28} color={color} />
+        options={({ route }) => ({
+          tabBarIcon: ({ color, focused }) => (
+            <IonIcons name="stats-chart" size={25} color={color} />
           ),
-        }}
+          tabBarItemStyle: {
+            backgroundColor: route.name === "donnees" ? "white" : "#67348B",
+            borderRadius: 20,
+            marginTop: 15,
+            maxWidth: 40,
+            marginLeft: 20,
+          },
+        })}
       />
       <Tabs.Screen
         name="index"
-        options={{
-          title: "Home",
-          tabBarIcon: ({ color }) => (
+        options={({ route }) => ({
+          tabBarIcon: ({ color, focused }) => (
             <IconSymbol size={28} name="house.fill" color={color} />
           ),
-        }}
+          tabBarItemStyle: {
+            backgroundColor: route.name === "index" ? "white" : "#67348B",
+            borderRadius: 20,
+            marginTop: 15,
+            maxWidth: 40,
+            marginLeft: 20,
+          },
+        })}
       />
       <Tabs.Screen
         name="pomodoro"
-        options={{
-          title: "Pomodoro",
-          tabBarIcon: ({ color }) => (
+        options={({ route }) => ({
+          tabBarIcon: ({ color, focused }) => (
             <IonIcons name="alarm" size={28} color={color} />
           ),
-        }}
+          tabBarItemStyle: {
+            backgroundColor: route.name === "pomodoro" ? "white" : "#67348B",
+            borderRadius: 20,
+            marginTop: 15,
+            maxWidth: 40,
+            marginLeft: 20,
+          },
+        })}
       />
       <Tabs.Screen
         name="profil"
-        options={{
-          title: "Profil",
-          tabBarIcon: ({ color }) => (
+        options={({ route }) => ({
+          tabBarIcon: ({ color, focused }) => (
             <IonIcons name="person" size={28} color={color} />
           ),
-        }}
+          tabBarItemStyle: {
+            backgroundColor: route.name === "profil" ? "white" : "#67348B",
+            borderRadius: 20,
+            marginTop: 15,
+            maxWidth: 40,
+            marginLeft: 20,
+          },
+        })}
       />
     </Tabs>
   );
