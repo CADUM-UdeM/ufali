@@ -1,13 +1,9 @@
 import { Tabs } from "expo-router";
 import React from "react";
 
-import { IconSymbol } from "@/components/ui/icon-symbol";
-import { useColorScheme } from "@/hooks/use-color-scheme";
 import IonIcons from "@expo/vector-icons/Ionicons";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
@@ -61,7 +57,7 @@ export default function TabLayout() {
         name="index"
         options={({ route }) => ({
           tabBarIcon: ({ color, focused }) => (
-            <IconSymbol size={28} name="house.fill" color={color} />
+            <IonIcons size={28} name="home" color={color} />
           ),
           tabBarItemStyle: {
             backgroundColor: route.name === "index" ? "white" : "#67348B",
@@ -104,6 +100,4 @@ export default function TabLayout() {
       />
     </Tabs>
   );
-};
-
-export default _Layout;
+}
