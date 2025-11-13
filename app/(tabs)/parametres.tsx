@@ -3,20 +3,20 @@ import { StyleSheet } from "react-native";
 export default function HomeScreen() {}
 
 const styles = StyleSheet.create({
-  titleContainer: {
+titleContainer: {
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
-  },
-  stepContainer: {
+    },
+stepContainer: {
     gap: 8,
     marginBottom: 8,
-  },
-  reactLogo: {
+    },
+reactLogo: {
     height: 178,
     width: 290,
     bottom: 0,
     left: 0,
     position: "absolute",
-  },
+    },
 });
