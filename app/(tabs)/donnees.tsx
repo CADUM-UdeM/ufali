@@ -1,4 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { useRouter } from "expo-router";
 import { useState } from "react";
 import {
   Modal,
@@ -11,7 +12,8 @@ import {
   View,
 } from "react-native";
 
-export default function HomeScreen() {
+export default function Donnees() {
+  const router = useRouter();
   const [courses, setCourses] = useState([
     { id: "1", name: "Placeholder Cours" },
   ]);
@@ -82,27 +84,34 @@ export default function HomeScreen() {
         }}
       >
         {courses.map((course) => (
-          <View key={course.id} style={styles.coursContainer}>
-            <TouchableOpacity
-              onPress={(e) => {
-                const { pageY, pageX } = e.nativeEvent;
-                setMenuPosition({ top: pageY, left: pageX });
-                setMenuVisible(course.id);
-              }}
-            >
+          <Pressable
+            key={course.id}
+            onPress={() => router.push("/detailscours")}
+            style={{ width: "100%", alignItems: "center" }}
+          >
+            <View style={styles.coursContainer}>
+              <TouchableOpacity
+                onPress={(e) => {
+                  e.stopPropagation();
+                  const { pageY, pageX } = e.nativeEvent;
+                  setMenuPosition({ top: pageY, left: pageX });
+                  setMenuVisible(course.id);
+                }}
+              >
+                <Ionicons
+                  style={styles.more}
+                  name="ellipsis-vertical"
+                  size={20}
+                />
+              </TouchableOpacity>
+              <Text style={styles.coursText}>{course.name}</Text>
               <Ionicons
-                style={styles.more}
-                name="ellipsis-vertical"
+                style={styles.chevRight}
+                name="chevron-forward"
                 size={20}
               />
-            </TouchableOpacity>
-            <Text style={styles.coursText}>{course.name}</Text>
-            <Ionicons
-              style={styles.chevRight}
-              name="chevron-forward"
-              size={20}
-            />
-          </View>
+            </View>
+          </Pressable>
         ))}
 
         <TouchableOpacity
