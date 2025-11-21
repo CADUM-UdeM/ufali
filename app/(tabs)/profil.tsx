@@ -61,7 +61,8 @@ return (
 
 
         <TouchableOpacity style={styles.infoButton} onPress={handlePress}>
-        <Text style={styles.textButton}>....</Text>
+        <IonIcons name="notifications-outline" size={28} color={'black'} />
+        <Text style={styles.textButton}>Notifications</Text>
         </TouchableOpacity>
         <Text></Text>
         
@@ -69,7 +70,6 @@ return (
         <IonIcons name="log-out-outline" size={28} color={'black'} />
         <Text style={styles.textButton}>Deconnection</Text>
         </TouchableOpacity>
-
 
         <TouchableOpacity style={styles.actionButton} onPress={delete_account}>
         <IonIcons name="trash-outline" size={28} color={'black'} />
