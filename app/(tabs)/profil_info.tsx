@@ -1,4 +1,5 @@
 import IonIcons from "@expo/vector-icons/Ionicons";
+import { useRouter } from "expo-router";
 import React from "react";
 import { Alert, Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View, useColorScheme } from "react-native";
 
@@ -16,20 +17,7 @@ export default function HomeScreen() {
 
     const [password, set_password] = React.useState('mdp123');
     const [show_password, set_show_password] = React.useState(true);
-
-
-    const return_button = () => {
-        Alert.alert(
-            'Êtes-vous sûr(e) de vouloir retourner en arriere ?',
-            undefined,
-            [{
-                text: 'Oui',
-                style: 'cancel',
-            }, {
-                text: 'Non'
-            },
-            ])
-    }
+    const router = useRouter();
 
     const cancel_button = () => {
         Alert.alert(
@@ -60,7 +48,7 @@ export default function HomeScreen() {
     return (
         <ScrollView contentContainerStyle={styles.buttonStyle}>
             {isModified && (
-                <TouchableOpacity style={styles.go_back_button} onPress={return_button}>
+                <TouchableOpacity style={styles.go_back_button} onPress={() => router.push("/profil")}>
                     <IonIcons name="return-down-back-outline" size={40} color={'black'}/>
                 </TouchableOpacity>)}
             {!isModified && (

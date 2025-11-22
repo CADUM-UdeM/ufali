@@ -7,25 +7,14 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#000000ff",
-        tabBarInactiveTintColor: "#000000",
+        tabBarActiveTintColor: "#AB8BFF",
+        tabBarInactiveTintColor: "#ffffff",
         headerShown: false,
-        tabBarShowLabel: true,
-        tabBarLabelStyle:{
-          fontSize: 6
-        },
+        tabBarShowLabel: false,
         tabBarStyle: {
-          backgroundColor: "#67348B",
-          position: "absolute",
-          bottom: 35,
-          borderRadius: 25,
-          height: 70,
-          marginHorizontal: "5%",
+          backgroundColor: "#221F3D",
           shadowColor: "#000",
-          alignItems:'center',
-          justifyContent:'center'
         },
-        tabBarInactiveBackgroundColor: "#67348B",
       }}
     >
       <Tabs.Screen
@@ -34,13 +23,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <IonIcons name="settings" size={28} color={color} />
           ),
-          tabBarItemStyle: {
-            backgroundColor: route.name === "parametres" ? "white" : "#67348B",
-            borderRadius: 20,
-            marginTop: 15,
-            marginLeft: 20,
-            maxWidth: 40,
-          },
         })}
       />
       <Tabs.Screen
@@ -49,13 +31,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <IonIcons name="stats-chart" size={25} color={color} />
           ),
-          tabBarItemStyle: {
-            backgroundColor: route.name === "donnees" ? "white" : "#67348B",
-            borderRadius: 20,
-            marginTop: 15,
-            maxWidth: 40,
-            marginLeft: 20,
-          },
         })}
       />
       <Tabs.Screen
@@ -64,13 +39,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <IonIcons size={28} name="home" color={color} />
           ),
-          tabBarItemStyle: {
-            backgroundColor: route.name === "index" ? "white" : "#67348B",
-            borderRadius: 20,
-            marginTop: 15,
-            maxWidth: 40,
-            marginLeft: 20,
-          },
         })}
       />
       <Tabs.Screen
@@ -79,13 +47,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <IonIcons name="alarm" size={28} color={color} />
           ),
-          tabBarItemStyle: {
-            backgroundColor: route.name === "pomodoro" ? "white" : "#67348B",
-            borderRadius: 20,
-            marginTop: 15,
-            maxWidth: 40,
-            marginLeft: 20,
-          },
         })}
       />
       <Tabs.Screen
@@ -94,17 +55,26 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <IonIcons name="person" size={28} color={color} />
           ),
-          tabBarItemStyle: {
-            backgroundColor: route.name === "profil" ? "white" : "#67348B",
-            borderRadius: 20,
-            marginTop: 15,
-            maxWidth: 40,
-            marginLeft: 20,
-          },
         })}
       />
-
+      <Tabs.Screen
+        name="detailscours"
+        options={{
+          href: null,
+        }}
+      />
+            <Tabs.Screen
+        name="profil_info"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="notifications"
+        options={{
+          href: null,
+        }}
+      />
     </Tabs>
   );
 }
-

@@ -1,4 +1,5 @@
 import IonIcons from "@expo/vector-icons/Ionicons";
+import { useRouter } from "expo-router";
 import React from "react";
 import { Alert, Image, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 
@@ -7,10 +8,8 @@ export default function HomeScreen() {
 
 const colorScheme = useColorScheme();
 const isDarkMode = colorScheme == 'dark';
+const router = useRouter();
 
-const handlePress = ( )=> {
-    console.log("Es-tu sure de voir te deconnecter ?")
-}
 const log_out = ( )=> {
     Alert.alert(
         'Êtes-vous sûr(e) de vouloir vous deconnecter ?',
@@ -18,7 +17,7 @@ const log_out = ( )=> {
         [
         {
             text:'Oui',
-            style:'cancel', 
+            style:'cancel',
         },
         {
             text:'Non'
@@ -54,13 +53,13 @@ return (
         <Text></Text>
 
 
-        <TouchableOpacity style={styles.infoButton} onPress={() => Alert.alert('Simple Button pressed')}>
+        <TouchableOpacity style={styles.infoButton}  onPress={() => router.push("/profil_info")}>
         <IonIcons name="menu" size={28} color={'black'} />
         <Text style={styles.textButton}>Mes informations</Text>
         </TouchableOpacity>
 
 
-        <TouchableOpacity style={styles.infoButton} onPress={handlePress}>
+        <TouchableOpacity style={styles.infoButton} onPress={() => router.push("/notifications")}>
         <IonIcons name="notifications-outline" size={28} color={'black'} />
         <Text style={styles.textButton}>Notifications</Text>
         </TouchableOpacity>
